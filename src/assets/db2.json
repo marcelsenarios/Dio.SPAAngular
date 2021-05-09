@@ -1,0 +1,58 @@
+{
+  "listatransacoes": [
+    {
+      "nome": "Luiz",
+      "valorTransacao": "250.00",
+      "diaTransacao": "5",
+      "mesTransacao": "10",
+      "anoTransacao": "2020",
+      "classificacaoTransacao": "transporte",
+      "id": 3
+    },
+    {
+      "nome": "Luiz",
+      "valorTransacao": "-100.00",
+      "diaTransacao": "22",
+      "mesTransacao": "10",
+      "anoTransacao": "2020",
+      "classificacaoTransacao": "transporte",
+      "id": 4
+    },
+    {
+      "nome": "Luiz",
+      "valorTransacao": "61",
+      "diaTransacao": "17",
+      "mesTransacao": "11",
+      "anoTransacao": "2020",
+      "classificacaoTransacao": "educacao",
+      "id": 8
+    },
+    {
+      "nome": "Luiz",
+      "valorTransacao": "61.01",
+      "diaTransacao": "17",
+      "mesTransacao": "11",
+      "anoTransacao": "2020",
+      "classificacaoTransacao": "alimentacao",
+      "id": 9
+    },
+    {
+      "nome": "luiz",
+      "valorTransacao": "61",
+      "diaTransacao": "18",
+      "mesTransacao": "11",
+      "anoTransacao": "2020",
+      "classificacaoTransacao": "transporte",
+      "id": 10
+    },
+    {
+      "nome": "Luiz",
+      "valorTransacao": "10",
+      "diaTransacao": "17",
+      "mesTransacao": "11",
+      "anoTransacao": "2020",
+      "classificacaoTransacao": "transporte",
+      "id": 11
+    }
+  ]
+}

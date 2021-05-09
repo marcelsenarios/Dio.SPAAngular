@@ -1,0 +1,103 @@
+
+<p class="titulo">Adicionar Uma Transação:</p>
+
+<div class="grid-container">
+  <div>
+    <form class="container" [formGroup]="AdicionarTransacao" (ngSubmit)="onSubmit(AdicionarTransacao.value)"> 
+      <p>Insira o nome: </p>
+      <mat-form-field appearance="fill">
+        <mat-label>Nome</mat-label>
+        <input matInput type="text" class="example-right-align" 
+        formControlName="nome" value="luiz">
+      </mat-form-field>
+
+      <p>Insira o valor: </p>
+      <mat-form-field appearance="fill">
+        <mat-label>Valor</mat-label>
+        <input matInput type="number" class="example-right-align" 
+        formControlName="valorTransacao">
+        <span matPrefix>R$&nbsp;</span>
+      </mat-form-field>
+      
+      
+      <p>Insira a Data: </p>
+    
+      <mat-form-field appearance="fill">
+        <mat-label>Data da Transação</mat-label>
+        <input matInput [matDatepicker]="picker" (dateInput)="OnDateChange($event.value)" 
+        formControlName="dataTransacao" >
+        <mat-datepicker-toggle matSuffix [for]="picker" > </mat-datepicker-toggle>
+        <mat-datepicker #picker >
+      </mat-datepicker>
+      </mat-form-field>
+
+      <p>Insira a Classificação: </p>
+
+
+      <mat-form-field appearance="fill">
+      <mat-label>Classificação Transação</mat-label>
+      <select matNativeControl required formControlName="classificacaoTransacao">
+        <option value="alimentacao">Alimentação</option>
+        <option value="educacao">Educação</option>
+        <option value="transporte">Transporte</option>
+        <option value="salario">Salário</option>
+        <option value="trabalhoextra">Trabalhos Extras</option>
+      </select>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit" >Confirmar </button>
+
+  </form>
+  </div>
+  <div>
+    <p>
+    </p>
+        <p class="titulo">Altere o valor:</p>
+    <p>
+      <button mat-raised-button color="primary"  type="button" (click)=Varia(0.01)>1centavo</button>
+      <button mat-raised-button color="warn"  type="button" (click)=Varia(-0.01)>-1centavo</button>
+    </p>
+    <p>
+      <button mat-raised-button color="primary"  type="button" (click)=Varia(1)>1 real</button>
+      <button mat-raised-button color="warn"  type="button" (click)=Varia(-1)>-1 real</button>
+  
+    </p>
+    <p>
+      <button mat-raised-button color="primary"  type="button" (click)=Varia(10)>10 reais</button>
+      <button mat-raised-button color="warn"  type="button" (click)=Varia(-10)>-10 reais </button>
+        
+    </p>
+
+    <p>
+      <button mat-raised-button color="primary"  type="button" (click)=Varia(50)>50 reais</button>
+      <button mat-raised-button color="warn"  type="button" (click)=Varia(-50)>-50 reais </button>
+        
+    </p>
+
+    <p>
+      <button mat-raised-button color="primary"  type="button" (click)=Varia(100)>100 reais</button>
+      <button mat-raised-button color="warn"  type="button" (click)=Varia(-100)>-100 reais </button>
+        
+    </p>
+
+    <p>
+      <button mat-raised-button color="primary"  type="button" (click)=Varia(1000)>1000 reais</button>
+      <button mat-raised-button color="warn"  type="button" (click)=Varia(-1000)>-1000 reais </button>
+        
+    </p>
+
+  </div>
+</div>
+
+
+<!-- value="{{valor.toFixed(2)}}" -->
+
+<!-- <p>Olá ! {{user}}</p> -->
+
+<!-- nome: "Luiz",
+ID: 1,
+valorTransacao: -1000,
+diaTransacao: 10,
+mesTransacao: 10,
+anoTransacao: 2020,
+classificacaoTransacao: "educacao", -->
